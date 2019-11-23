@@ -90,6 +90,15 @@
         }
     --------------------------------------------------------------------------
     --------------------------------------------------------------------------
+    4.4 Crear archivo eslintignore:
+        node_modules/
+        .npm/
+        build/
+        .next
+        .vscode
+        packages/
+        .git/
+        README.md
 5. -develop- Delete unused images and files (App.css, logo.svg)
 6. subir los cambios a la rama develop
      git add . / git commit -m "" / git push
@@ -104,3 +113,18 @@
     git checkout -b test
     npm install --save-dev cypress
     npm install --save-dev enzyme
+    git add . / git commit -m "install test" 
+    git push -u origin test
+    git checkout develop / git merge test / git push
+9. branche router:
+    9.1 git checkout -b router
+    9.2 npm install --save react-router-dom
+    9.3 crear la estructura src/pages
+        src/pages/Home -> index.js  y Home.js
+        src/pages/About -> index.js  y About.js
+    9.4 añadir App.js el Header
+    9.5 subir los cambios:
+        git add . / git commit -m "install router" 
+        git push -u origin router
+        git checkout develop / git merge router / git push
+

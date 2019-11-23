@@ -1,10 +1,26 @@
 import React from 'react';
 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+
+import Home from './pages/Home';
+import About from './pages/About';
+
 function App() {
   return (
-    <div>
-      <div> Sandra create react app Boilerplate </div>
-    </div>
+    <>
+      <header>
+        <Route>
+          <Switch>
+            <Route path='/'><Home/></Route>
+            <Route path='/'><About/></Route>
+          </Switch>
+        </Route>
+      </header>
+    </>
   );
 }
 
