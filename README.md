@@ -127,3 +127,9 @@
         git add . / git commit -m "install router" 
         git push -u origin router
         git checkout develop / git merge router / git push
+10. Crear rama redux (git checkout -b redux)
+    10.1 instalar redux: npm install --save redux react-redux
+    10.2 subir los cambios:
+        git add . / git commit -m "install redux" 
+        git push -u origin redux
+        git checkout develop / git merge redux / git push
