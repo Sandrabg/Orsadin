@@ -4,6 +4,7 @@
 2. clonar repositorio:
     2.1 git clone https://github.com/Skylab/Boilerplate/Sandra-CRA-Boilerplate.git
     git remote -v: comproba que se ha vinculado con el repositorio remote
+    git remote
 3. instalar react-app:
     3.1 opciones:
         3.1.1 npm install -g create-react-app (se instala a nivel global en mi ordenador)
@@ -133,3 +134,20 @@
         git add . / git commit -m "install redux" 
         git push -u origin redux
         git checkout develop / git merge redux / git push
+11. Crear rama firebase (git checkout -b firebase)
+    11.1 instalar firebase: npm install firebase@6.6.2 --save
+    11.2 subir los cambios:
+        git add . / git commit -m "install firebase" 
+        git push -u origin firebase
+        git checkout develop / git merge firebase / git push
+----------------------------------------------------------------------------------------------------
+                                Fork
+----------------------------------------------------------------------------------------------------
+   - new repository 
+   - git clone NuevoRepositorio
+   - git remote add upstream https://github.com/Skylab/Boilerplate/Sandra-CRA-Boilerplate.git
+   - git remote -v --> origin y el upstream
+   - git pull upstream develop
+   - git push origin master
+------------------------------------------------------------------------------------------------------
+
