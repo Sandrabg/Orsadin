@@ -1,8 +1,9 @@
 import React from 'react';
 
 import {
-  BrowserRouter as Route,
-  Switch
+  BrowserRouter as Router,
+  Switch,
+  Route
 } from "react-router-dom";
 
 import Home from './pages/Home';
@@ -14,12 +15,12 @@ function App() {
   return (
     <>
       <header>
-      <Route>
+      <Router>
         <Switch>
           <Route path = "/"><Home></Home></Route>
           <Route path = "/"><About></About></Route>
         </Switch>
-      </Route>         
+      </Router>         
       </header>
       <div>
         <CounterButtons></CounterButtons>
