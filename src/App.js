@@ -12,6 +12,7 @@ import About from './pages/About';
 import CounterButtons from './components/CounterButtons';
 
 function App() {
+  console.log("hola")
   return (
     <>
       <header>
